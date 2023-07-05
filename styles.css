@@ -14,33 +14,42 @@ body {
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f9f9f9;
     padding: 20px;
 }
 
-header {
-    background-color: #f9f9f9;
-    padding: 10px 0;
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-nav ul {
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.sidebar nav ul {
     list-style-type: none;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
+.sidebar nav ul li {
+    margin-bottom: 10px;
 }
 
-nav ul li a {
+.sidebar nav ul li a {
     text-decoration: none;
     color: #333;
-    padding: 5px;
 }
 
 main {
-    padding: 20px 0;
+    flex: 1;
+    padding: 20px;
 }
 
 section {
@@ -50,6 +59,7 @@ section {
 h1 {
     font-size: 28px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 h2 {
@@ -63,13 +73,4 @@ p {
 
 footer {
     background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Additional styles can be added as needed */
+    color: #fff

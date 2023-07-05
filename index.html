@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
@@ -13,37 +10,48 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>My Portfolio</h1>
     </header>
 
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Your introduction and description about yourself go here.</p>
-        </section>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="your-picture.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+            </div>
 
-        <section id="resume">
-            <h1>Resume</h1>
-            <p>Your resume details and work experience go here.</p>
-        </section>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <section id="portfolio">
-            <h1>Portfolio</h1>
-            <p>Showcase your projects and work samples here.</p>
-        </section>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Your introduction and description about yourself go here.</p>
+            </section>
 
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <p>Provide your contact information and a contact form here.</p>
-        </section>
-    </main>
+            <section id="resume">
+                <h2>Resume</h2>
+                <p>Your resume details and work experience go here.</p>
+            </section>
+
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <p>Showcase your projects and work samples here.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Provide your contact information and a contact form here.</p>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2023 Your Name</p>
