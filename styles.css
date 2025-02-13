@@ -50,3 +50,17 @@ button:hover {
 button:active {
   transform: scale(0.9); /* Slightly shrink the button when clicked */
 }
+
+/* Shaking animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+/* Apply shaking effect on the 'No' button */
+.no-btn.shake {
+  animation: shake 0.5s ease; /* Shake for 0.5 seconds */
+}
